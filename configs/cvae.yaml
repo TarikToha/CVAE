@@ -5,9 +5,9 @@ model_params:
   latent_dim: 128
 
 data_params:
-  data_path: "Data/"
+  data_path: "data/"
   train_batch_size: 64
-  val_batch_size:  64
+  val_batch_size: 64
   patch_size: 64
   num_workers: 4
 
@@ -20,7 +20,7 @@ exp_params:
   manual_seed: 1265
 
 trainer_params:
-  gpus: [1]
+  gpus: [ 0 ]
   max_epochs: 10
 
 logging_params:

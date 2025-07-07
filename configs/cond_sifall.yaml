@@ -1,13 +1,14 @@
 model_params:
-  name: 'VanillaVAE'
+  name: 'ConditionalSiFall'
   in_channels: 3
   latent_dim: 128
 
 
 data_params:
-  data_path: "data/"
-  train_batch_size: 64
-  val_batch_size: 64
+  dataset_name: 'VisionRadarDataset'
+  data_path: "data/diffusion_color.v9.1-azi_fft.v9.1/"
+  train_batch_size: 32
+  val_batch_size: 32
   patch_size: 64
   num_workers: 4
 
@@ -22,8 +23,9 @@ exp_params:
 trainer_params:
   gpus: [ 0 ]
   max_epochs: 100
+  check_val_every_n_epoch: 5
 
 logging_params:
   save_dir: "logs/"
-  name: "VanillaVAE"
-  
+  name: "ConditionalSiFall"
+

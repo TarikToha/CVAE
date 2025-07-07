@@ -1,6 +1,10 @@
+numpy
+pillow
 pytorch-lightning==1.5.6
 PyYAML==6.0
+pandas
 tensorboard>=2.2.0
 torch>=1.6.1
 torchsummary==1.5.1
 torchvision>=0.10.1
+tqdm
